@@ -10,7 +10,6 @@ $(document).ready(function() {
 	});
 	// Submit form using AJAX and clear the submitted results
 	$('#contact').ajaxForm({
-		url: '/sandbox/form/scripts/form/mail.php',
 		target: '#message',
 		success: successMessage,
 		clearForm: true,
