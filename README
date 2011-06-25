@@ -1,0 +1,1 @@
+Getting a good contact form with an AJAX submission and validation sucks. This is a vanilla contact form using basic validation and AJAX. It uses the jQuery form plugin (http://jquery.malsup.com/form) and jQuery validation (http://bassistance.de/jquery-plugins/jquery-plugin-validation).
