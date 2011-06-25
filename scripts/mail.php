@@ -1,7 +1,7 @@
 <?php
 	
 	// Configuration Settings
-	$mail_to = "aaron.bushnell@gmail.com";
+	$mail_to = "youremail@domain.com";
 	$subject = "Contact Form Submission";
 	$from = "contact@sitename.com";
 	
