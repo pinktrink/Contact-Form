@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Validation</title>
+	<meta charset="utf-8">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Reusser Design, LLC - www.reusserdesign.com" />
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/form/validation.js"></script>
+	<script src="scripts/form/form.js"></script>
+	<script src="scripts/form/index.js"></script>
+</head>
+<body>
+	<div id="message" style="display: none;"></div>
+	<form id="contact" action="mail.php" method="post">
+		<table>
+			<tr style="display: none">
+				<td>&nbsp;</td>
+				<td><input type="text" name="Leave_Blank" /></td>
+			</tr>
+			<tr>
+				<td>Your Name</td>
+				<td><input type="text" name="Your_Name" /></td>
+			</tr>
+			<tr>
+				<td>Email Address</td>
+				<td><input type="text" name="Email_Address" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="Phone_Number" /></td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td><textarea name="Message"></textarea></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" value="Send" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
