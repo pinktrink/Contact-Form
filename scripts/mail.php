@@ -40,9 +40,11 @@
 	if(isset($config['bcc']) && count($config['bcc'])) $headers['Bcc'] = implode(',', $config['bcc']);
 
 	// If everything is filled out correctly, send the e-mail
+	$hstr = '';
+	foreach($headers as $key => $val) $hstr .= "$key: $val\n";
 	if ($body != "") {
 		echo 'Your message sent successfully. Thank you for contacting us.';
-		mail(implode(',', $config['mail']), $subject, $body, implode("\n", $headers));
+		mail(implode(',', $config['to']), $subject, $body, $hstr);
 	}
 
 ?>
