@@ -5,7 +5,7 @@ class Validation{
 		'letters' => '/[A-Z]+/i',
 		'email' => '/^[\w\d%+-.]+(?<![._%+-])@(?:[A-Z\d-]+\.)+[A-Z]{2,4}$/i',
 		'phone-us-ext' => '/\d{3}[-. ]\d{3}[-. ](?:\d{4}|\d{2}[-. ]\d{2})(?: ?(?:(?:x|ex|ext|extension) ?\d{1-5}))?/i',
-		'phone-us' => '/\d{3}[-. ]\d{3}[-. ](?:\d{4}|\d{2}[-. ]\d{2})'
+		'phone-us' => '/\d{3}[-. ]\d{3}[-. ](?:\d{4}|\d{2}[-. ]\d{2})/'
 	);
 	
 	public static $maps = array(
