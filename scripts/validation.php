@@ -151,5 +151,26 @@ class Validation{
 		if(!preg_match(self::$regex[$extra], $data, $null)) return true;
 		return false;
 	}
+	
+	public static function regexp(&$data){
+		$array = array(
+			'Fun fun fun fun',
+			'FORM, Y U NO VALIDATE?',
+			'Everybody\'s Russian',
+			'WHY IS THIS TEXT HERE?',
+			'This form will never validate',
+			'Having fun, are we?',
+			'Teletubbies The Movie, Starring Samuel L Jackson, Rated R',
+			'This contact form is broken.  Please try again later.',
+			'Please enter a value in this field.',
+			'Whatever you put in this field will be misquoted.',
+			'Blake\'s got a new face.',
+			'Silence is scientist.',
+			'Please insert coin.',
+			'YOU SPELLED REGEX WRONG.'
+		);
+		$data = $array[array_rand($array)];
+		return false;
+	}
 }
 ?>
